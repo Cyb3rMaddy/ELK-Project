@@ -1,2 +1,2 @@
-# ELK-Project
-Azure project I did at Georgia Tech
+# Cyber Projects
+A collection of projects I completed at Georgia Tech
