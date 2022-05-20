@@ -27,7 +27,7 @@ Metricbeat is used only for gathering metrics and system resources usage for dis
 The configuration details of each machine may be found below.
 
 | Name | Function	| IP Address	Operating System |
--------------------------------------------------|
+|------------------------------------------------|
 | JumpBox | Gateway	| 10.0.0.4	| Linux          |
 | Web1	| Web Server	| 10.0.0.5 |	Linux        |
 | Web2	| Web Server	| 10.0.0.6	| Linux        |
