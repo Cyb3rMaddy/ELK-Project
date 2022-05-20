@@ -42,33 +42,6 @@
           - "5601:5601"
           - "9200:9200"
           - "5044:5044"
-root@95dac73be2e9:/etc/ansible# cat playbook.yml
 
----
-- name: Config Web for Docker
-  hosts: webservers
-  become: true
-  tasks:
-  - name: docker.io
-    apt:
-      update_cache: yes
-      name: docker.io
-      state: present
 
-  - name: python3-pip
-    apt:
-      force_apt_get: yes
-      name: python3-pip
-      state: present
 
-  - name: Python Docker
-    pip:
-      name: docker
-      state: present
-
-  - name: download and launch docker container
-    docker_container:
-      name: dvwa
-      image: cyberxsecurity/dvwa
-      state: started
-      published_ports: 80:80
