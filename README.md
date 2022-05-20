@@ -55,7 +55,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![ELK_docker](https://user-images.githubusercontent.com/61891953/169599820-63cea6d6-17ae-42e8-b62e-062cd5475ce3.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -67,7 +67,11 @@ We have installed the following Beats on these machines:
 - Web 1, Web 2
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- Filebeats collects system type events such as logins to see who is actively logging into the system.
+![filebeat-modules-system](https://user-images.githubusercontent.com/61891953/169601561-87f60fbd-5a90-4a61-af83-6010d8bf0b3d.jpg)
+
+- Metricbeats collects useful information such as cpu usage and memory, this is particularly useful when seeing if there are any aberant programs or behaviors taking system resources
+![metricbeat memory usage](https://user-images.githubusercontent.com/61891953/169601597-0b3ebcfb-858e-467c-ae18-ea59a6940889.png)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
