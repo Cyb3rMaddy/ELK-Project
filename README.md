@@ -26,10 +26,11 @@ Filebeat is meant primarily to watch for system logs and forward any changes to 
 Metricbeat is used only for gathering metrics and system resources usage for display in Elasticsearch
 The configuration details of each machine may be found below.
 
-Name	Function	IP Address	Operating System
-JumpBox	Gateway	10.0.0.4	Linux 
-Web1	Web Server	10.0.0.5		Linux 
-Web2	Web Server	10.0.0.6	Linux
-ELK	ElasticSearch Stack	10.1.0.4	Linux
+| Name | Function	| IP Address	Operating System |
+-------------------------------------------------|
+| JumpBox | Gateway	| 10.0.0.4	| Linux          |
+| Web1	| Web Server	| 10.0.0.5 |	Linux        |
+| Web2	| Web Server	| 10.0.0.6	| Linux        |
+| ELK	| ElasticSearch Stack	| 10.1.0.4 | Linux   |
 
 ### Access Policies
