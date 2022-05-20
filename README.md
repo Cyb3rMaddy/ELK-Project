@@ -83,12 +83,19 @@ SSH into the control node and follow the steps below:
 
 ### Commands to Use the Playbook
 nano ansible.cfg
+
 add the machine, its IP, and ansible_python_interpreter=/usr/bin/python3 to the hosts
+
 Ctrl + x to exit file
+
 in the folder that install-elk.yml is in, run: cp install-elk.yml /etc/ansible
+
 nano install-elk.yml /etc/ansible
+
 name: installing elk hosts: [your_machine]
+
 Ctrl + x to exit file
+
 ansible-playbook install-elk.yml
 
 The playbook file is located in /Ansible/installELK_playbook.yml
